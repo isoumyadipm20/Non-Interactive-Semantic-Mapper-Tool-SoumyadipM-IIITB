@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Mapper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> SDG Semantic Mapper Tool</h1>
+    <div>
+        <label for="similarity-slider">Filter based on Semantic Similarity Threshold:</label>
+        <input type="range" id="similarity-slider" min="20" max="90" step="20" value="25">
+        <span id="slider-value">30%</span>
+    </div>
+    <div id="results" class="hidden">
+        <h2>SDG Goals</h2>
+        <div id="sdg-goals-container" class="sdg-container"></div>
+        <h2>SDG Targets</h2>
+        <div id="sdg-targets-container" class="sdg-container"></div>
+        <h2>SDG Indicators</h2>
+        <div id="sdg-indicators-container" class="sdg-container"></div>
+    </div>
+    <div id="color-coded-text"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
